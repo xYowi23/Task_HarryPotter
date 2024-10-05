@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Document</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&display=swap" rel="stylesheet">
+    <!--Font awesonme-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--css-->
+    <link rel="stylesheet" href="bacchetta.css">
+    <title>Bacchette</title>
 </head>
-<body>
+<body class="bg-black">
        <!-- navbar -->
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <nav class="navbar navbar-expand-lg  navbar-dark bg-dark dancing-script-nav ">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -18,16 +27,16 @@
             <li class="nav-item active">
               <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="#">Bacchete</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="bacchettaForm.html">Aggiungi Bacchete</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="casata.html">Casata</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="casataForm.html">Aggiungi Casata</a>
             </li>
           
@@ -36,14 +45,15 @@
       </nav>
 
       <!-- tabella Bacchette -->
-      <div class="container mt-5">
-        <div class="row mt-5" >
+      <div class="container mt-5 text-white dancing-script-nav ">
+        <h1 >Bacchette <i class="fa-solid fa-wand-sparkles fa-lg"></i></h1>
+        <div class="row mt-5 " >
           
           <div class="col-md-12">
   
-            <table class="table table-striped table-responsive-md">
-              <thead>
-                  <tr>
+            <table class="table table-striped table-responsive-md table-dark">
+              <thead class="text-center dancing-script">
+                  <tr >
                       <th>#</th>
                       <th>Codice Bacchetta</th>
                       <th>Materiale</th>
@@ -69,16 +79,16 @@
 
       <!--Model-->
 
-      <div class="modal fade" id="modalModificaBacchetta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade ba" id="modalModificaBacchetta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modifica</h5>
+            <div class="modal-header bg-black">
+              <h5 class="modal-title text-white dancing-script-tb" id="exampleModalLabel">Modifica <i class="fa-solid fa-feather-pointed fa-xs" style="color: #edeff2;"></i></h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body bg-black text-white dancing-script-tb">
               <div class="form-group">
                 <label for="input-codice-bacchetta">Codice Bacchetta</label>
                 <input type="text" class="form-control" id="input-codice-bacchetta">
@@ -124,9 +134,9 @@
 
               
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" id="btn-salva-nuovo" data-identif="" onclick="salvaBacchetta(this)">Save changes</button>
+            <div class="modal-footer bg-black">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close <i class="fa-solid fa-arrow-right-from-bracket" style="color: #f9fafa;"></i></button>
+              <button type="button" class="btn btn-primary" id="btn-salva-nuovo" data-identif="" onclick="salvaBacchetta(this)">Save <i class="fa-solid fa-upload" style="color: #f1f4f9;"></i></button>
             </div>
           </div>
         </div>

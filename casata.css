@@ -1,0 +1,37 @@
+.Back-Footer, .Black-Body{
+    background-color: black;
+}
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 120%;
+    font-style: normal;
+   
+  }
+  .lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: lighter;
+    font-style:normal;
+
+  }
+  .dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:normal;
+    font-size:x-large;
+    font-style: normal;
+  }
+  .dancing-script-tb{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:normal;
+    font-size:large;
+    font-style: normal;
+  }
+  .dancing-script-nav{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:normal;
+    font-size:x-large;
+    font-style: normal;
+  }

@@ -2,19 +2,20 @@
 function tabellaCasata() {
     console.log("richiamo stampa");
 
-    let datiLocali = localStorage.getItem("casata") != null ? JSON.parse(localStorage.getItem("casata")) : [];
-
+    // let datiLocali = localStorage.getItem("casata") != null ? JSON.parse(localStorage.getItem("casata")) : [];
+    let datiLocali  = totBacchette();
     let contenitore = "";
     for (let [idx, item] of datiLocali.entries()) {
         contenitore += `
             <tr>
-                <td>${idx + 1}</td>
-                <td>${item.nome}</td>
-                <td>${item.descrizione}</td>
-                <td><img src="${item.file}" class="img-thumbnail" style="width: 100px; height:100 h"></td>
-                <td>
-                    <button type="button" class="btn btn-danger mt-2 btn-sm" onclick="eliminaCasata(${idx})">Elimina</button>
-                    <button type="button" class="btn btn-warning mt-2 btn-sm" onclick="modifica(${idx})">Modifica</button>
+                <td class="align-middle dancing-script-tb text-center">${idx + 1}</td>
+                <td class="align-middle dancing-script-tb text-center">${item.nome}</td>
+                <td class="align-middle dancing-script-tb text-center">${item.descrizione}</td>
+                <td class="text-center" ><img src="${item.file}" class="img-thumbnail" style="width: 100px; height:100 h"></td>
+                <td class="align-middle dancing-script-tb text-center">${item.tot}</td>
+                <td class="text-center">
+                    <button type="button" class="btn btn-danger mt-2 btn-sm " onclick="eliminaCasata(${idx})"><i class="fa-solid fa-trash-can fa-xs" style="color: #1a1919;"></i></button>
+                    <button type="button" class="btn btn-warning mt-2 btn-sm " onclick="modifica(${idx})"><i class="fa-regular fa-pen-to-square" style="color: #1f1f1f;"></i></button>
                 </td>
             </tr>
         `;
@@ -45,6 +46,42 @@ function modifica(indice) {
         }
     }
 }
+
+
+function totBacchette() {
+    let listaCasate = [];
+    let bacchette = localStorage.getItem("bacchetta");
+    let casateSt = localStorage.getItem("casata");
+
+    
+    if (bacchette) {
+        bacchette = JSON.parse(bacchette);
+        casate = JSON.parse(casateSt);
+        let tot = 0;
+        casate.forEach(function(casata) {
+            let nome = casata.nome;
+            console.log("nome casata" + nome);
+            bacchette.forEach(function(bacchetta) {
+            console.log("nome bachetta " +bacchetta.sceltaCasata);
+                if(nome.toLowerCase() == bacchetta.sceltaCasata.toLowerCase()){
+                    tot += 1;
+                    console.log (tot);
+                }
+            });
+            casata.tot = tot;
+            tot = 0;
+            listaCasate.push(casata);
+
+        });
+        
+    }
+    return listaCasate; 
+}
+
+
+//totBacchette();
+
+// console.log(listaBacchetta );
 
 function salva(varBottone) {
     let posizione = $(varBottone).data('identif');

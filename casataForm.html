@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Document</title>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&display=swap" rel="stylesheet">
+    <!--Font awesonme-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--css-->
+    <link rel="stylesheet" href="casata.css">
+    <title>Form Casata</title>
 </head>
-<body>
+<body class="Black-Body text-white ">
        <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg   navbar-dark bg-dark dancing-script-nav">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -18,31 +27,28 @@
               <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="bacchetta.html">Bacchete</a>
+              <a class="nav-link  active" href="bacchetta.html">Bacchete</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="bacchettaForm.html">Aggiungi Bacchete</a>
+              <a class="nav-link active" href="bacchettaForm.html">Aggiungi Bacchete</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="casata.html">Casate</a>
+              <a class="nav-link active" href="casata.html">Casate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Aggungi Casata </a>
+              <a class="nav-link active" href="#">Aggungi Casata </a>
             </li>
             
           </ul>
         </div>
       </nav>
-
-      <div  class="container mt-5">
-        <h1>Casate</h1>
-
-        <!-- form inserimento della casata -->
-
+     <!-- form inserimento della casata -->
+      <div  class="container mt-5 dancing-script-tb">
+        
         <div class="row">
           <div class="col-md-12">
-            <h2>Inserisci Casata</h2>
-            <div class="form-group">
+            <h2 class="">Inserisci Casata <i class="fa-solid fa-shield-cat fa-xl" style="color: #ffffff;"></i></h2>
+            <div class="form-group mt-2">
               <label for="input-nome-casata">Nome Casata</label>
               <input type="text" class="form-control" id="input-nome-casata">
             </div>
@@ -58,7 +64,7 @@
                 </div>
               
             </div class="row">
-            <div class="col-md-12 text-center"><button class="btn btn-success btn-lg" onclick="aggiungi()">Salva</button>
+            <div class="col-md-12 text-center"><button class="btn btn-success btn-lg" onclick="aggiungi()">Salva <i class="fa-solid fa-floppy-disk"></i></button>
             </div>
             
           </div>

@@ -1,0 +1,39 @@
+.backgroungImgPrinc{
+    background-image:url(homepage.jpg) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+.Back-Footer, .Black-Body{
+    background-color: black;
+}
+.Size-text-Welcome{
+   font-size: 300%;
+   font-weight: bolder;
+
+}
+
+
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 400%;
+    font-style: normal;
+    font-weight: bolder;
+  }
+  .dancing-script-tb{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:normal;
+    font-size:large;
+    font-style: normal;
+  }
+  .dancing-script-Welcome{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-size:400%;
+    font-style: normal;
+  }
+
+

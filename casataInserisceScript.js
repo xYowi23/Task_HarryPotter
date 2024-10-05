@@ -5,6 +5,7 @@ function aggiungi() {
             let  varNome= $("#input-nome-casata").val();
             let varDescrizione= $("#input-descrizione-casata").val();
             let fileInput = document.getElementById("file-casata").files[0];
+            let totaleBacchette=0;
             
            
 
@@ -15,7 +16,8 @@ function aggiungi() {
         let cst = {
             nome: varNome,
             descrizione: varDescrizione,
-            file: fileBase64, 
+            file: fileBase64,
+            tot:totaleBacchette,
         };
 
         datiLocali.push(cst);
