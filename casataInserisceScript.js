@@ -2,7 +2,7 @@ function aggiungi() {
 
     let datiLocali = localStorage.getItem("casata") !=null ? JSON.parse(localStorage.getItem("casata")) : [];
 
-            let  varNome= $("#input-nome-casata").val();
+            let varNome= $("#input-nome-casata").val();
             let varDescrizione= $("#input-descrizione-casata").val();
             let fileInput = document.getElementById("file-casata").files[0];
             let totaleBacchette=0;

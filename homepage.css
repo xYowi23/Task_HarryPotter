@@ -12,9 +12,20 @@
    font-weight: bolder;
 
 }
+.Size-text-Welcome2{
+  font-size: 150%;
+  font-weight: bolder;
+
+}
 
 
-
+.dancing-script-nav{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight:normal;
+  font-size:x-large;
+  font-style: normal;
+}
 .cedarville-cursive-regular {
     font-family: "Cedarville Cursive", cursive;
     font-size: 400%;
@@ -35,5 +46,23 @@
     font-size:400%;
     font-style: normal;
   }
+  .dancing-script-Welcome2{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-size:250%;
+    font-style: normal;
+  }
 
+
+
+  .slow-bounce {
+    animation-duration: 2s;}
+
+
+    .imgineBg{
+      background-image: url(    https://i.pinimg.com/originals/d1/6d/cf/d16dcf7d8887f3ac1655b1b383fe72d8.gif);
+      background-size: cover;
+  
+    }
 

@@ -34,3 +34,19 @@
     font-size:x-large;
     font-style: normal;
   }
+  .imgineBg{
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/43906b04-b244-47a7-a3a8-0e16b37845bc/d4lffyr-43b51f5c-1f14-4148-801a-c933de0149f2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQzOTA2YjA0LWIyNDQtNDdhNy1hM2E4LTBlMTZiMzc4NDViY1wvZDRsZmZ5ci00M2I1MWY1Yy0xZjE0LTQxNDgtODAxYS1jOTMzZGUwMTQ5ZjIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.l9O10HgO4rudHxU_ulRqXOSBOmEMVvormZ5rNN34yVA);
+    background-size: cover;
+
+  }
+
+  .imgineBg2{
+    background-image: url(https://www.fulrath.com/uploads/1/9/4/2/19426037/homepage-position1_2_orig.gif);
+    background-size: cover;
+
+  }
+  .imgineBfFot{
+    background-image: url(    https://i.pinimg.com/originals/d1/6d/cf/d16dcf7d8887f3ac1655b1b383fe72d8.gif);
+    background-size: cover;
+
+  }

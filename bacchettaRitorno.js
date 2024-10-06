@@ -13,10 +13,10 @@
                     <td class="align-middle dancing-script-tb"> ${item.lunghezza}</td>
                     <td class="align-middle dancing-script-tb">${item.resistenza}</td>
                     <td class="align-middle dancing-script-tb">${item.magoProprietario}</td>
-                    <td class="align-middle dancing-script-tb">${item.sceltaCasata}</td>
+                    <td class="align-middle dancing-script-tb">${ item.sceltaCasata.toUpperCase()}</td>
                     <td class="align-middle dancing-script-tb"><img src="${item.imgCasata}" class="img-thumbnail" style="width: 100px; height:100 h"></td>
                     <td class="align-middle">
-                        <button type="button" class="btn btn-danger mt-2 btn-sm" onclick="eliminaBacchetta(${idx})"><i class="fa-solid fa-trash-can fa-xs" style="color: #1a1919;"></i></button>
+                        <button type="button" class="btn btn-danger mt-2 btn-sm" onclick="eliminaBacchetta(${idx})"><i class="fa-solid fa-trash-can " style="color: #1a1919;"></i></button>
                         <button type="button" class="btn btn-warning mt-2 btn-sm" onclick="modificaBacchetta(${idx})"><i class="fa-regular fa-pen-to-square" style="color: #1f1f1f;"></i></button>
                     </td>
                 </tr>

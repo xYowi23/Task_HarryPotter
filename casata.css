@@ -35,3 +35,14 @@
     font-size:x-large;
     font-style: normal;
   }
+
+  .imgineBg{
+    background-image:url(houses-of-hogwarts-crest-h15fsq7nrda3dk2b.jpg);
+    background-size: cover;
+
+  }
+  .imgineBfFot{
+    background-image: url(    https://i.pinimg.com/originals/d1/6d/cf/d16dcf7d8887f3ac1655b1b383fe72d8.gif);
+    background-size: cover;
+
+  }
